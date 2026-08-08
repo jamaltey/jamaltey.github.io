@@ -15,8 +15,6 @@ const App = () => {
 
   useEffect(() => {
     AOS.init();
-    window.scrollTo(0, 1);
-    window.scrollTo(0, 0);
   }, []);
 
   return (

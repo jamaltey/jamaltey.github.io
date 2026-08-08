@@ -11,6 +11,7 @@ const links = [
 const Header = ({ activeSection }: { activeSection: string | null }) => {
   const { ref, inView } = useInView({
     initialInView: true,
+    fallbackInView: false,
   });
 
   return (

@@ -32,9 +32,7 @@ const Hero = () => {
           <ArrowDown size={30} />
         </a>
       </div>
-      <div className="absolute top-[50vh] right-6 -z-10 animate-pulse [animation-duration:6s] sm:right-[-30%] lg:right-[-20%]">
-        <div className="pointer-events-none h-10 w-15 scale-x-[5] scale-y-[8] rounded-full bg-blue-900/60 blur-xl will-change-[filter] sm:w-25 sm:scale-y-[20] sm:blur-3xl md:w-md md:scale-x-[2] lg:scale-x-[3]" />
-      </div>
+      <div className="absolute -top-20 right-0 -z-10 h-[120vh] w-screen scale-150 animate-pulse bg-radial-[at_70%] from-blue-950/55 to-transparent to-50% will-change-transform [animation-duration:5s] md:right-[-15%] lg:w-[70vw]" />
     </>
   );
 };
