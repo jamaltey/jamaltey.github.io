@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <>
-      <div ref={ref} className="isolate container flex h-screen items-center p-8 md:p-5" id="hero">
+      <div ref={ref} className="container flex h-screen items-center p-8 md:p-5" id="hero">
         <div className="">
           <h2 className="pb-1 pl-2 font-mono text-xl md:text-3xl">Hello(); I'm</h2>
           <h1 className="pb-4 text-4xl font-bold md:text-6xl">Jamal Teymurov</h1>
@@ -25,8 +25,8 @@ const Hero = () => {
         >
           <ArrowDown size={30} />
         </a>
-        <div className="absolute top-1/2 right-[-20%] -z-10 -translate-y-1/2 animate-pulse [animation-duration:5s] lg:right-[-12%]">
-          <div className="pointer-events-none h-10 w-15 scale-x-[2] scale-y-[9] rounded-full bg-blue-900/60 blur-3xl will-change-[filter] md:w-md"></div>
+        <div className="absolute top-1/2 right-6 -z-10 -translate-y-1/2 animate-pulse [animation-duration:5s] lg:right-[-12%]">
+          <div className="pointer-events-none h-10 w-15 scale-x-[4] scale-y-[20] rounded-full bg-blue-900/60 blur-xl will-change-[filter] md:w-md md:scale-x-[3] md:blur-3xl" />
         </div>
       </div>
     </>
