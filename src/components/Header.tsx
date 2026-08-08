@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { cn } from '../lib/cn';
 
@@ -9,12 +8,7 @@ const links = [
   { label: 'Contact', href: '#contact' },
 ];
 
-const Header = () => {
-  useEffect(() => {
-    window.scrollTo(0, 1);
-    window.scrollTo(0, 0);
-  }, []);
-
+const Header = ({ activeSection }: { activeSection: string | null }) => {
   const { ref, inView } = useInView({
     initialInView: true,
   });
@@ -25,7 +19,7 @@ const Header = () => {
       <header className="absolute inset-x-0 top-0 z-50 px-4 pt-4 md:fixed">
         <nav
           className={cn(
-            'mx-auto flex h-16 max-w-6xl items-center justify-between px-6 transition-all duration-300 md:px-8',
+            'mx-auto flex h-16 max-w-6xl items-center px-6 transition-all duration-300 md:px-8',
             inView
               ? 'border border-transparent bg-transparent'
               : 'rounded-full border border-white/10 bg-black/20 shadow-lg shadow-black/10 backdrop-blur-md'
@@ -39,16 +33,26 @@ const Header = () => {
             Jamal<span className="text-blue-500">.</span>
           </a>
 
-          <ul className="mx-auto hidden items-center gap-8 md:flex">
+          <ul className="mx-auto hidden items-center gap-8 duration-700 md:flex">
             {links.map(link => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="group relative py-2 text-[15px] font-medium tracking-wide text-gray-300 transition-colors duration-200 hover:text-white"
+                  className={cn(
+                    'group relative py-2 text-[15px] font-medium tracking-wide text-gray-300 transition-colors duration-200 hover:text-white',
+                    activeSection === link.href.slice(1) && 'text-white'
+                  )}
                 >
                   {link.label}
 
-                  <span className="absolute inset-x-0 -bottom-0.5 h-px origin-left scale-x-0 bg-white transition-transform duration-300 group-hover:scale-x-100" />
+                  <span
+                    className={cn(
+                      'absolute inset-x-0 -bottom-0.5 h-px origin-left bg-white transition-transform duration-300',
+                      activeSection === link.href.slice(1)
+                        ? 'scale-x-100'
+                        : 'scale-x-0 group-hover:scale-x-100'
+                    )}
+                  />
                 </a>
               </li>
             ))}
