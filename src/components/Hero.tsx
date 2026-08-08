@@ -10,11 +10,11 @@ const Hero = () => {
 
   return (
     <>
-      <div
+      <section
         ref={ref}
         data-aos="fade-down"
         data-aos-duration={700}
-        className="relative flex h-screen items-center p-8 md:p-5"
+        className="relative flex h-screen items-center"
         id="hero"
       >
         <div className="">
@@ -31,8 +31,8 @@ const Hero = () => {
         >
           <ArrowDown size={30} />
         </a>
-      </div>
-      <div className="absolute -top-20 right-0 -z-10 h-[120vh] w-screen scale-150 animate-pulse bg-radial-[at_70%] from-blue-950/55 to-transparent to-50% will-change-transform [animation-duration:5s] md:right-[-15%] lg:w-[70vw]" />
+      </section>
+      <div className="absolute -top-20 right-0 -z-10 h-[120vh] w-screen scale-150 animate-pulse bg-radial-[at_70%] from-blue-950/70 to-transparent to-50% will-change-transform [animation-duration:5s] md:right-[-15%] lg:w-[70vw]" />
     </>
   );
 };

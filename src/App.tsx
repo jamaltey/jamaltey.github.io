@@ -14,13 +14,13 @@ const App = () => {
   const [activeSection] = useState<SectionId | null>(null); // TODO: implement active section
 
   useEffect(() => {
-    AOS.init();
+    AOS.init({ duration: 500 });
   }, []);
 
   return (
     <>
       <Header activeSection={activeSection} />
-      <main className="container" id="home">
+      <main className="container px-8 md:px-7 lg:px-5" id="home">
         <Hero />
         <About />
         <Projects />

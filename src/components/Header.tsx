@@ -17,7 +17,7 @@ const Header = ({ activeSection }: { activeSection: string | null }) => {
   return (
     <>
       <div ref={ref} aria-hidden="true" className="absolute top-6 h-px w-px" />
-      <header className="absolute inset-x-0 top-0 z-50 px-4 pt-4 md:fixed">
+      <header className="absolute inset-x-0 top-0 z-50 px-4 pt-4 md:fixed" data-aos="fade-down">
         <nav
           className={cn(
             'mx-auto flex h-16 max-w-6xl items-center px-6 transition-all duration-300 md:px-8',
@@ -30,8 +30,6 @@ const Header = ({ activeSection }: { activeSection: string | null }) => {
             href="#home"
             aria-label="Go to the top of the page"
             className="text-xl font-semibold tracking-tight text-white"
-            data-aos="fade-down"
-            data-aos-duration={500}
           >
             Jamal<span className="text-blue-500">.</span>
           </a>
@@ -41,7 +39,7 @@ const Header = ({ activeSection }: { activeSection: string | null }) => {
               <li
                 key={link.href}
                 data-aos="fade-down"
-                data-aos-duration={500}
+
                 data-aos-delay={50 + index * 100}
               >
                 <a
