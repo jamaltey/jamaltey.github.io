@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { cn } from '../lib/cn';
 
@@ -9,6 +10,11 @@ const links = [
 ];
 
 const Header = () => {
+  useEffect(() => {
+    window.scrollTo(0, 1);
+    window.scrollTo(0, 0);
+  }, []);
+
   const { ref, inView } = useInView({
     initialInView: true,
   });
