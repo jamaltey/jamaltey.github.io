@@ -28,7 +28,7 @@ const Header = () => {
             'mx-auto flex h-16 max-w-6xl items-center justify-between px-6 transition-all duration-300 md:px-8',
             inView
               ? 'border border-transparent bg-transparent'
-              : 'rounded-full border border-white/10 bg-black/20 shadow-lg shadow-black/10 backdrop-blur-xl'
+              : 'rounded-full border border-white/10 bg-black/20 shadow-lg shadow-black/10 backdrop-blur-md'
           )}
         >
           <a
