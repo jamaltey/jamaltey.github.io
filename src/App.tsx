@@ -1,3 +1,5 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { useEffect, useState } from 'react';
 import About from './components/About';
 import Experience from './components/Experience';
@@ -12,6 +14,7 @@ const App = () => {
   const [activeSection, setActiveSection] = useState<SectionId | null>(null); // TODO: implement active section
 
   useEffect(() => {
+    AOS.init();
     window.scrollTo(0, 1);
     window.scrollTo(0, 0);
   }, []);
@@ -19,8 +22,8 @@ const App = () => {
   return (
     <>
       <Header activeSection={activeSection} />
-      <Hero />
-      <main className="p-4" id="home">
+      <main className="container" id="home">
+        <Hero />
         <About />
         <Projects />
         <Experience />

@@ -10,7 +10,13 @@ const Hero = () => {
 
   return (
     <>
-      <div ref={ref} className="relative container flex h-screen items-center p-8 md:p-5" id="hero">
+      <div
+        ref={ref}
+        data-aos="fade-down"
+        data-aos-duration={700}
+        className="relative flex h-screen items-center p-8 md:p-5"
+        id="hero"
+      >
         <div className="">
           <h2 className="pb-1 pl-2 font-mono text-xl md:text-3xl">Hello(); I'm</h2>
           <h1 className="pb-4 text-4xl font-bold md:text-6xl">Jamal Teymurov</h1>

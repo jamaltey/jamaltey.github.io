@@ -29,13 +29,20 @@ const Header = ({ activeSection }: { activeSection: string | null }) => {
             href="#home"
             aria-label="Go to the top of the page"
             className="text-xl font-semibold tracking-tight text-white"
+            data-aos="fade-down"
+            data-aos-duration={500}
           >
             Jamal<span className="text-blue-500">.</span>
           </a>
 
           <ul className="mx-auto hidden items-center gap-8 duration-700 md:flex">
-            {links.map(link => (
-              <li key={link.href}>
+            {links.map((link, index) => (
+              <li
+                key={link.href}
+                data-aos="fade-down"
+                data-aos-duration={500}
+                data-aos-delay={50 + index * 100}
+              >
                 <a
                   href={link.href}
                   className={cn(
