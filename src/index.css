@@ -3,13 +3,13 @@
 
 @layer base {
   html {
-    scroll-behavior: smooth;
+    @apply overflow-x-clip scroll-smooth;
   }
   body {
-    @apply overflow-x-hidden bg-[#0a0f21] font-[Geist] text-gray-300;
+    @apply relative overflow-x-clip bg-[#0a0f21] font-[Geist] text-gray-300;
   }
   section {
-    scroll-margin-top: 6rem;
+    @apply scroll-mt-24;
   }
 }
 
