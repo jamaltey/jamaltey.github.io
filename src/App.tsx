@@ -11,7 +11,7 @@ import Projects from './components/Projects';
 type SectionId = 'about' | 'projects' | 'experience' | 'contact';
 
 const App = () => {
-  const [activeSection, setActiveSection] = useState<SectionId | null>(null); // TODO: implement active section
+  const [activeSection] = useState<SectionId | null>(null); // TODO: implement active section
 
   useEffect(() => {
     AOS.init();
