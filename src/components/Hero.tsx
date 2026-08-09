@@ -1,17 +1,9 @@
 import { ArrowDown } from 'lucide-react';
-import { useInView } from 'react-intersection-observer';
-import { cn } from '../lib/cn';
 
 const Hero = () => {
-  const { ref, inView } = useInView({
-    threshold: 0.9,
-    initialInView: true,
-  });
-
   return (
     <>
       <section
-        ref={ref}
         data-aos="fade-down"
         data-aos-duration={700}
         className="relative flex h-screen items-center"
@@ -24,10 +16,11 @@ const Hero = () => {
         </div>
         <a
           href="#about"
-          className={cn(
-            'absolute bottom-24 left-1/2 -translate-x-1/2 animate-bounce duration-200 md:bottom-3',
-            inView ? 'opacity-100' : 'md:opacity-0'
-          )}
+          className={'absolute bottom-24 left-1/2 -translate-x-1/2 animate-bounce md:bottom-3'}
+          data-aos="fade"
+          data-aos-mirror
+          data-aos-anchor="h1"
+          data-aos-duration={200}
         >
           <ArrowDown size={30} />
         </a>
