@@ -9,7 +9,7 @@
     @apply relative overflow-x-clip bg-[#0a1023] font-[Geist] text-gray-300;
   }
   section {
-    @apply min-h-[50vh] scroll-mt-24;
+    @apply min-h-[50vh] scroll-mt-16 md:scroll-mt-50;
   }
 }
 

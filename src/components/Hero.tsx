@@ -25,8 +25,8 @@ const Hero = () => {
         <a
           href="#about"
           className={cn(
-            'absolute bottom-2 left-1/2 -translate-x-1/2 animate-bounce duration-200',
-            inView ? 'opacity-100' : 'opacity-0'
+            'absolute bottom-24 left-1/2 -translate-x-1/2 animate-bounce duration-200 md:bottom-3',
+            inView ? 'opacity-100' : 'md:opacity-0'
           )}
         >
           <ArrowDown size={30} />
