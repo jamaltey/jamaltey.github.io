@@ -8,7 +8,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 
-type SectionId = 'about' | 'projects' | 'experience' | 'contact';
+type SectionId = 'hero' | 'about' | 'projects' | 'experience' | 'contact';
 
 const App = () => {
   const [activeSection] = useState<SectionId | null>(null); // TODO: implement active section
