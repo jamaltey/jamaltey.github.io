@@ -1,10 +1,12 @@
+import { MoveUpRight, SquareArrowOutUpRight } from 'lucide-react';
+
 const projects = [
   {
     title: 'Newline Halo Clone',
     description:
       'A clone of the popular clothing brand HALO, built with React, Tailwind CSS, and Supabase. I build this website as a final project for a frontend development course.',
     image: '/projects/newlinehalo.jpg',
-    tags: ['React', 'Supabase', 'Tailwind CSS'],
+    tags: ['React', 'Tailwind CSS', 'Supabase'],
     liveUrl: 'https://newlinehalo.vercel.app',
     githubUrl: 'https://github.com/jamaltey/newlinehalo',
     label: '',
@@ -15,7 +17,7 @@ const projects = [
     description:
       'A web application for finding hiking trails in Azerbaijan. Built with React, Tailwind CSS, and Supabase. I build this website for a national hackathon for high school students.',
     image: '/projects/trailaz.jpg',
-    tags: ['React', 'TypeScript', 'Node.js'],
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase'],
     liveUrl: 'https://trailaz.netlify.app',
     githubUrl: 'https://github.com/jamaltey/trailaz',
   },
@@ -153,7 +155,6 @@ const Projects = () => {
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <h3 className="text-xl font-semibold">{project.title}</h3>
-
                   <p className="mt-3 leading-relaxed text-gray-400">{project.description}</p>
                 </div>
 
@@ -162,9 +163,9 @@ const Projects = () => {
                   target="_blank"
                   rel="noreferrer"
                   aria-label={`Open ${project.title}`}
-                  className="text-lg text-gray-400 transition duration-200 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-white"
+                  className="text-lg text-gray-400 transition duration-200 hover:text-white"
                 >
-                  ↗
+                  <SquareArrowOutUpRight />
                 </a>
               </div>
 
@@ -184,18 +185,20 @@ const Projects = () => {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-gray-300 transition hover:text-white"
+                  className="inline-flex items-center gap-1 text-gray-300 transition hover:text-white"
                 >
-                  Live Demo ↗
+                  <span>Live Demo</span>
+                  <MoveUpRight size={16} />
                 </a>
 
                 <a
                   href={project.githubUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-gray-300 transition hover:text-white"
+                  className="inline-flex items-center gap-1 text-gray-300 transition hover:text-white"
                 >
-                  GitHub ↗
+                  <span>GitHub</span>
+                  <MoveUpRight size={16} />
                 </a>
               </div>
             </div>
@@ -208,9 +211,10 @@ const Projects = () => {
           href="https://github.com/jamaltey"
           target="_blank"
           rel="noreferrer"
-          className="text-sm text-gray-400 transition hover:text-white"
+          className="inline-flex items-center gap-1 text-sm text-gray-400 transition hover:text-white"
         >
-          View more on GitHub ↗
+          <span>View more on GitHub</span>
+          <MoveUpRight size={16} />
         </a>
       </div>
     </section>
