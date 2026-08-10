@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex scroll-mt-50 flex-col items-center gap-10 pb-10 md:flex-row md:gap-20"
+      className="flex flex-col items-center gap-10 pb-10 md:scroll-mt-50 md:flex-row md:gap-20"
     >
       <div className="flex-2">
         <h2 className="pb-5 text-4xl md:text-5xl" data-aos="fade-up">
