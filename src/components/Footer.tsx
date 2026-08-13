@@ -2,17 +2,27 @@ import { MailIcon } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="flex min-h-100 items-center justify-center rounded-t-[50px] border-t border-[#292929] bg-zinc-950 text-center">
-      <div id="contact" className="">
-        <h3 className="text-4xl text-white md:text-5xl">Get in touch</h3>
+    <footer className="flex h-90 items-center justify-center rounded-t-[50px] border-t border-[#292929] bg-zinc-950 text-center">
+      <div id="contact">
+        <h3 className="text-4xl text-white md:text-5xl" data-aos="fade-up" data-aos-duration={600}>
+          Get in touch
+        </h3>
         <a
           href="mailto:hello@jamalteymurov.com"
-          className="mt-3 flex items-center justify-center font-semibold gap-2 text-lg"
+          className="mt-3 flex items-center justify-center gap-2 text-lg font-semibold"
+          data-aos="fade-up"
+          data-aos-duration={600}
+          data-aos-delay={50}
         >
           <MailIcon />
           hello@jamalteymurov.com
         </a>
-        <div className="mt-5 flex justify-center gap-4">
+        <div
+          className="mt-5 flex justify-center gap-4"
+          data-aos="fade-up"
+          data-aos-duration={600}
+          data-aos-delay={100}
+        >
           <a
             href="https://www.linkedin.com/in/jamalteymurov"
             target="_blank"
