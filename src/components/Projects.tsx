@@ -36,10 +36,10 @@ const Projects = () => {
   const others = projects.filter(project => !project.featured);
 
   return (
-    <section id="projects" className="mx-auto max-w-6xl px-4 py-24 sm:px-6 md:py-32">
-      <div className="mb-10 md:mb-14">
+    <section id="projects" className="mx-auto max-w-6xl px-4 py-20 sm:px-6 md:py-40">
+      <div className="mb-10">
         <h2
-          className="text-center text-4xl font-medium md:text-[2.75rem] lg:text-5xl"
+          className="text-center text-4xl font-medium md:text-start md:text-[2.75rem] lg:text-5xl"
           data-aos="fade-up"
           data-aos-anchor="#projects p[data-aos]"
         >
@@ -47,7 +47,7 @@ const Projects = () => {
         </h2>
 
         <p
-          className="mt-3 max-w-xl text-center text-gray-400 sm:text-lg md:mt-4"
+          className="mt-3 max-w-xl text-center text-gray-400 sm:text-lg md:mt-4 md:text-start"
           data-aos="fade-up"
           data-aos-delay="50"
         >
@@ -134,7 +134,7 @@ const Projects = () => {
         </article>
       )}
 
-      <div className="mt-8 grid gap-8 md:grid-cols-2">
+      <div className="mt-8 grid gap-8 md:mt-6 md:grid-cols-2">
         {others.map(project => (
           <article
             key={project.title}
