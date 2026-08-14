@@ -9,7 +9,7 @@ const Footer = () => {
         </h3>
         <a
           href="mailto:hello@jamalteymurov.com"
-          className="mt-3 flex items-center justify-center gap-2 text-lg font-semibold"
+          className="mt-3 flex items-center justify-center gap-1.5 text-lg font-medium tracking-wider"
           data-aos="fade-up"
           data-aos-duration={600}
           data-aos-delay={50}

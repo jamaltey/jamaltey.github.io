@@ -6,12 +6,12 @@ const Hero = () => {
       <section
         data-aos="fade-down"
         data-aos-duration={700}
-        className="relative flex h-screen items-center"
+        className="relative flex h-screen items-center justify-center sm:justify-start"
         id="hero"
       >
         <div>
           <p className="pb-1 pl-2 font-mono text-xl md:text-3xl">Hello(); I'm</p>
-          <h1 className="pb-2 md:pb-4 text-4xl font-bold md:text-6xl">Jamal Teymurov</h1>
+          <h1 className="pb-2 text-4xl font-bold md:pb-4 md:text-6xl">Jamal Teymurov</h1>
           <h2 className="pl-1 text-xl md:text-3xl">A Full-stack web developer</h2>
         </div>
         <a

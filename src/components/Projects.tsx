@@ -37,16 +37,20 @@ const Projects = () => {
 
   return (
     <section id="projects" className="mx-auto max-w-6xl px-4 py-24 sm:px-6 md:py-32">
-      <div className="mb-14">
+      <div className="mb-10 md:mb-14">
         <h2
-          className="text-4xl md:text-5xl"
+          className="text-center text-4xl font-medium md:text-[2.75rem] lg:text-5xl"
           data-aos="fade-up"
           data-aos-anchor="#projects p[data-aos]"
         >
           Projects
         </h2>
 
-        <p className="mt-4 max-w-xl text-lg text-gray-400" data-aos="fade-up" data-aos-delay="50">
+        <p
+          className="mt-3 max-w-xl text-center text-gray-400 sm:text-lg md:mt-4"
+          data-aos="fade-up"
+          data-aos-delay="50"
+        >
           A selection of projects I've built, designed, or contributed to.
         </p>
       </div>
@@ -154,8 +158,10 @@ const Projects = () => {
             <div className="flex flex-1 flex-col gap-5 p-6">
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <h3 className="text-xl font-semibold">{project.title}</h3>
-                  <p className="mt-3 leading-relaxed text-gray-400">{project.description}</p>
+                  <h3 className="text-lg font-semibold sm:text-xl">{project.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-gray-400 sm:text-base">
+                    {project.description}
+                  </p>
                 </div>
 
                 <a
