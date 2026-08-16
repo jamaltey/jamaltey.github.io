@@ -134,13 +134,15 @@ const Projects = () => {
         </article>
       )}
 
-      <div className="mt-8 grid gap-8 md:mt-6 md:grid-cols-2">
+      <div
+        className="mt-8 grid gap-8 md:mt-6 md:grid-cols-2"
+        data-aos="fade-up"
+        data-aos-delay={150}
+      >
         {others.map(project => (
           <article
             key={project.title}
-            className="group flex flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/3 transition duration-300 hover:border-white/20"
-            data-aos="fade-up"
-            data-aos-delay={150}
+            className="group flex flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/3 shadow-blue-700/10 transition duration-300 hover:border-white/20 hover:shadow-lg"
           >
             <a
               href={project.liveUrl}
