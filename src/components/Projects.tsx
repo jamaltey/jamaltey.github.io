@@ -4,7 +4,7 @@ const projects = [
   {
     title: 'Newline Halo Clone',
     description:
-      'A clone of the popular clothing brand HALO, built with React, Tailwind CSS, and Supabase. I build this website as a final project for a frontend development course.',
+      'An unofficial educational recreation of Newline Halo, built with React, Tailwind CSS, and Supabase as the final project for a frontend development course.',
     image: '/projects/newlinehalo.jpg',
     tags: ['React', 'Tailwind CSS', 'Supabase'],
     liveUrl: 'https://newlinehalo.vercel.app',
@@ -15,7 +15,7 @@ const projects = [
   {
     title: 'Trail AZ',
     description:
-      'A web application for finding hiking trails in Azerbaijan. Built with React, Tailwind CSS, and Supabase. I build this website for a national hackathon for high school students.',
+      'A web application for discovering hiking trails in Azerbaijan, built with React, TypeScript, Tailwind CSS, and Supabase for a national high-school hackathon.',
     image: '/projects/trailaz.jpg',
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase'],
     liveUrl: 'https://trailaz.netlify.app',
