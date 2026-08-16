@@ -11,6 +11,23 @@
   section {
     @apply scroll-mt-6;
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      @apply scroll-auto;
+    }
+
+    [data-aos] {
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
+
+    .animate-bounce,
+    .animate-pulse {
+      animation: none !important;
+    }
+  }
 }
 
 @layer components {
