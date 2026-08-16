@@ -36,12 +36,7 @@ const Header = ({ activeSection }: { activeSection: string | null }) => {
 
           <ul className="mx-auto hidden items-center gap-8 duration-700 md:flex">
             {links.map((link, index) => (
-              <li
-                key={link.href}
-                data-aos="fade-down"
-
-                data-aos-delay={50 + index * 100}
-              >
+              <li key={link.href} data-aos="fade-down" data-aos-delay={50 + index * 100}>
                 <a
                   href={link.href}
                   className={cn(

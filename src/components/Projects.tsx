@@ -214,7 +214,12 @@ const Projects = () => {
         ))}
       </div>
 
-      <div className="mt-12 text-center">
+      <div
+        className="mt-12 text-center"
+        data-aos="fade-up"
+        data-aos-delay={200}
+        data-aos-anchor="#projects .grid"
+      >
         <a
           href="https://github.com/jamaltey"
           target="_blank"

@@ -18,6 +18,7 @@ const Footer = () => {
           data-aos="fade-up"
           data-aos-duration={600}
           data-aos-delay={50}
+          data-aos-anchor="#contact"
           data-aos-once
         >
           <span className="inline-flex items-center justify-center gap-1.5 duration-250 hover:scale-102">
@@ -30,6 +31,7 @@ const Footer = () => {
           data-aos="fade-up"
           data-aos-duration={600}
           data-aos-delay={100}
+          data-aos-anchor="#contact"
           data-aos-once
         >
           <a
