@@ -1,3 +1,5 @@
+import { MoveUpRight } from 'lucide-react';
+
 const activities = [
   {
     title: 'Web Development Instructor',
@@ -9,7 +11,7 @@ const activities = [
   },
   {
     title: 'Student Council - IT Head',
-    subtitle: 'Landau Preparetory School (Leznik & Co.)',
+    subtitle: 'Landau Preparatory School (Leznik & Co.)',
     description:
       'Represent the IT area within the Student Council, contributing to council discussions and supporting technology-related matters when needed.',
     image: '/logos/leznik&co.jpg',
@@ -27,8 +29,8 @@ const Experience = () => {
       <div className="mt-16 space-y-12">
         {activities.map(({ title, subtitle, description, image, period }, index) => (
           <article
-            className="flex flex-col gap-4 sm:flex-row sm:items-center"
             key={index}
+            className="flex flex-col gap-4 sm:flex-row sm:items-center"
             data-aos="fade-up"
             data-aos-offset={40}
             data-aos-delay={50 * (index + 1)}
@@ -47,6 +49,23 @@ const Experience = () => {
             </div>
           </article>
         ))}
+      </div>
+
+      <div
+        className="mt-12 text-center"
+        data-aos="fade-up"
+        data-aos-delay={50}
+        data-aos-anchor="#experience article:last-child"
+      >
+        <a
+          href="https://www.linkedin.com/in/jamalteymurov"
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-1 text-sm text-gray-400 transition hover:text-white"
+        >
+          <span>View more on LinkedIn</span>
+          <MoveUpRight size={16} />
+        </a>
       </div>
     </section>
   );
