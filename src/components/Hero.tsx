@@ -12,7 +12,7 @@ const Hero = () => {
         <div>
           <p className="pb-1 pl-2 font-mono text-xl md:text-3xl">Hello(); I'm</p>
           <h1 className="pb-2 text-4xl font-bold md:pb-4 md:text-6xl">Jamal Teymurov</h1>
-          <h2 className="pl-1 text-xl md:text-3xl">A full-stack web developer</h2>
+          <h2 className="pl-1 text-xl md:text-3xl">Full-stack web developer</h2>
         </div>
         <a
           href="#about"
