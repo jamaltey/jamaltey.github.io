@@ -21,7 +21,10 @@ const activities = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="mx-auto max-w-6xl px-6 py-20 pb-30 md:pb-45">
+    <section
+      id="experience"
+      className="mx-auto max-w-6xl px-6 py-20 pb-30 md:scroll-mt-[30vh] md:pb-45"
+    >
       <h2 className="text-4xl md:text-5xl" data-aos="fade-up">
         Experience & Activities
       </h2>

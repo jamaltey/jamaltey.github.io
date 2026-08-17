@@ -36,7 +36,10 @@ const Projects = () => {
   const others = projects.filter(project => !project.featured);
 
   return (
-    <section id="projects" className="mx-auto min-h-[50vh] max-w-6xl px-4 py-20 sm:px-6 md:pt-40">
+    <section
+      id="projects"
+      className="mx-auto min-h-[50vh] max-w-6xl px-4 py-20 sm:px-6 md:-scroll-mt-8 md:pt-40"
+    >
       <div className="mb-10">
         <h2
           className="text-center text-4xl font-medium md:text-start md:text-[2.75rem] lg:text-5xl"
