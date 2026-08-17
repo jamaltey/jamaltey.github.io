@@ -4,23 +4,25 @@ const Hero = () => {
   return (
     <>
       <section
-        data-aos="fade-down"
         data-aos-duration={700}
         className="relative z-1 flex h-screen items-center justify-center sm:justify-start"
         id="hero"
       >
-        <div>
+        <div className="pb-[10vh] sm:pb-10">
           <p className="pb-1 pl-2 font-mono text-xl md:text-3xl">Hello(); I'm</p>
           <h1 className="pb-2 text-4xl font-bold md:pb-4 md:text-6xl">Jamal Teymurov</h1>
           <h2 className="pl-1 text-xl md:text-3xl">Full-stack web developer</h2>
         </div>
         <a
           href="#about"
-          className={'absolute bottom-24 left-1/2 -translate-x-1/2 animate-bounce md:bottom-3'}
+          className={
+            'fixed bottom-1 left-1/2 -translate-x-1/2 animate-bounce sm:absolute sm:bottom-3'
+          }
           data-aos="fade"
           data-aos-mirror
-          data-aos-anchor="h1"
+          data-aos-anchor="#hero p"
           data-aos-duration={200}
+          data-aos-offset={222}
         >
           <ArrowDown size={30} />
         </a>
