@@ -17,10 +17,10 @@ const Header = ({ activeSection }: { activeSection: string | null }) => {
   return (
     <>
       <div ref={ref} aria-hidden="true" className="absolute top-6 h-px w-px" />
-      <header className="absolute inset-x-0 top-0 z-50 px-4 pt-4 md:fixed" data-aos="fade-down">
+      <header className="fixed inset-x-4 top-2 z-50 md:top-4" data-aos="fade-down">
         <nav
           className={cn(
-            'mx-auto flex h-16 max-w-6xl items-center px-6 transition-all duration-300 md:px-8',
+            'mx-auto flex h-14 max-w-6xl scrollbar-none items-center overflow-auto px-4 duration-300 sm:h-15 sm:px-8 md:h-16',
             inView
               ? 'border border-transparent bg-transparent'
               : 'rounded-full border border-white/10 bg-black/20 shadow-lg shadow-black/10 backdrop-blur-md'
@@ -29,12 +29,12 @@ const Header = ({ activeSection }: { activeSection: string | null }) => {
           <a
             href="#home"
             aria-label="Go to the top of the page"
-            className="text-xl font-semibold tracking-tight text-white"
+            className="hidden text-lg font-semibold tracking-tight text-white sm:inline md:text-xl"
           >
             Jamal<span className="text-blue-500">.</span>
           </a>
 
-          <ul className="mx-auto hidden items-center gap-8 duration-700 md:flex">
+          <ul className="mx-auto flex items-center gap-5 duration-700 md:flex md:gap-8">
             {links.map((link, index) => (
               <li key={link.href} data-aos="fade-down" data-aos-delay={50 + index * 100}>
                 <a
