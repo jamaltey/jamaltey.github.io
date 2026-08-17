@@ -2,7 +2,7 @@
 
 My personal portfolio website showcasing my projects, experience, achievements, and technical skills.
 
-🌐 Live website: https://jamaltey.github.io
+🌐 Live website: <a href="https://jamalteymurov.com/?utm_source=github&utm_medium=repository&utm_campaign=portfolio">jamalteymurov.com</a>
 
 ## About
 
