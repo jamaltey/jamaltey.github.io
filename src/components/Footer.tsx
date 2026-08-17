@@ -2,7 +2,7 @@ import { MailIcon } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="relative flex min-h-90 flex-col items-center justify-center rounded-t-[50px] border-t border-[#292929] bg-zinc-950 px-4 text-center">
+    <footer className="relative mt-30 flex min-h-90 flex-col items-center justify-center rounded-t-[50px] border-t border-[#292929] bg-zinc-950 px-4 text-center md:mt-45">
       <section className="mb-5" id="contact">
         <h3
           className="text-4xl text-white md:text-5xl"

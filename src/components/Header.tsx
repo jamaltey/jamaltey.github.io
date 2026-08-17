@@ -8,7 +8,12 @@ const links = [
   { label: 'Contact', href: '#contact' },
 ];
 
-const Header = ({ activeSection }: { activeSection: string | null }) => {
+type HeaderProps = {
+  activeSection: string | null;
+  onContactClick: () => void;
+};
+
+const Header = ({ activeSection, onContactClick }: HeaderProps) => {
   const { ref, inView } = useInView({
     initialInView: true,
     fallbackInView: false,
@@ -39,6 +44,7 @@ const Header = ({ activeSection }: { activeSection: string | null }) => {
               <li key={link.href} data-aos="fade-down" data-aos-delay={50 + index * 100}>
                 <a
                   href={link.href}
+                  onClick={link.href === '#contact' ? onContactClick : undefined}
                   className={cn(
                     'group relative py-2 text-[15px] font-medium tracking-wide text-gray-300 transition-colors duration-200 hover:text-white',
                     activeSection === link.href.slice(1) && 'text-white'
