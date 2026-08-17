@@ -54,7 +54,7 @@ const Header = ({ activeSection, onContactClick }: HeaderProps) => {
 
                   <span
                     className={cn(
-                      'absolute inset-x-0 -bottom-0.5 h-px origin-left bg-white transition-transform duration-300',
+                      'absolute inset-x-0 bottom-0 h-px origin-left bg-white transition-transform duration-300 sm:-bottom-0.5',
                       activeSection === link.href.slice(1)
                         ? 'scale-x-100'
                         : 'scale-x-0 group-hover:scale-x-100'
