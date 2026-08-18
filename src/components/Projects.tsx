@@ -9,8 +9,6 @@ const projects = [
     tags: ['React', 'Tailwind CSS', 'Supabase'],
     liveUrl: 'https://newlinehalo.vercel.app',
     githubUrl: 'https://github.com/jamaltey/newlinehalo',
-    label: '',
-    featured: false,
   },
   {
     title: 'Trail AZ',
@@ -21,20 +19,18 @@ const projects = [
     liveUrl: 'https://trailaz.netlify.app',
     githubUrl: 'https://github.com/jamaltey/trailaz',
   },
-  // {
-  //   title: 'Project X',
-  //   description: 'Another selected project with a concise explanation of the problem it solves.',
-  //   image: '/projects/project-three.png',
-  //   tags: ['Django', 'SQLte', 'REST API'],
-  //   liveUrl: 'https://example.com',
-  //   githubUrl: 'https://github.com/example/project',
-  // },
+  {
+    title: 'Project X',
+    description:
+      'A full-stack e-commerce platform for browsing and purchasing consumer electronics, built with Django, Django REST Framework, and Bootstrap. Features include product search and filtering, variants, reviews, wishlists, cart and checkout flows, order tracking, and light/dark themes.',
+    image: '/projects/projectx.jpg',
+    tags: ['Django', 'Django REST Framework', 'Bootstrap', 'jQuery', 'SQLite'],
+    liveUrl: 'https://projectx.jamalteymurov.com',
+    githubUrl: 'https://github.com/jamaltey/ProjectX',
+  },
 ];
 
 const Projects = () => {
-  const featured = projects.find(project => project.featured);
-  const others = projects.filter(project => !project.featured);
-
   return (
     <section
       id="projects"
@@ -58,91 +54,12 @@ const Projects = () => {
         </p>
       </div>
 
-      {featured && (
-        <article
-          className="group overflow-hidden rounded-3xl border border-white/10 bg-white/3 transition duration-300 hover:border-white/20"
-          data-aos="fade-up"
-        >
-          <a
-            href={featured.liveUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="block overflow-hidden"
-          >
-            <img
-              src={featured.image}
-              alt={`${featured.title} preview`}
-              className="aspect-16/8 w-full object-cover transition duration-500 group-hover:scale-[1.015]"
-            />
-          </a>
-
-          <div className="p-6 md:p-8">
-            {featured.label && (
-              <p className="mb-3 text-xs font-medium tracking-[0.18em] text-blue-400 uppercase">
-                {featured.label}
-              </p>
-            )}
-
-            <div className="flex items-start justify-between gap-6">
-              <div>
-                <h3 className="text-2xl font-semibold md:text-3xl">{featured.title}</h3>
-
-                <p className="mt-3 max-w-2xl leading-relaxed text-gray-400">
-                  {featured.description}
-                </p>
-              </div>
-
-              <a
-                href={featured.liveUrl}
-                target="_blank"
-                rel="noreferrer"
-                aria-label={`Open ${featured.title}`}
-                className="text-xl text-gray-400 transition duration-200 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-white"
-              >
-                ↗
-              </a>
-            </div>
-
-            <div className="mt-6 flex flex-wrap gap-2">
-              {featured.tags.map(tag => (
-                <span
-                  key={tag}
-                  className="rounded-full border border-white/10 bg-white/4 px-3 py-1 text-sm text-gray-400"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-
-            <div className="mt-6 flex gap-5 text-sm">
-              <a
-                href={featured.liveUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="text-gray-300 transition hover:text-white"
-              >
-                Live Demo ↗
-              </a>
-
-              <a
-                href={featured.githubUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="text-gray-300 transition hover:text-white"
-              >
-                GitHub ↗
-              </a>
-            </div>
-          </div>
-        </article>
-      )}
-
       <div
         className="mt-8 grid gap-8 md:mt-6 md:grid-cols-2"
         data-aos="fade-up"
         data-aos-delay={150}
       >
-        {others.map(project => (
+        {projects.map(project => (
           <article
             key={project.title}
             className="group flex flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/3 shadow-blue-700/10 transition duration-300 hover:border-white/20 hover:shadow-lg"
