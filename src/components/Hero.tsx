@@ -14,10 +14,12 @@ const Hero = () => {
           <h2 className="pl-1 text-xl md:text-3xl">Full-stack web developer</h2>
         </div>
         <a
-          href="#about"
           className={
             'fixed bottom-1 left-1/2 -translate-x-1/2 animate-bounce sm:absolute sm:bottom-3'
           }
+          href="#about"
+          title="Scroll down"
+          aria-label="Scroll down"
           data-aos="fade"
           data-aos-mirror
           data-aos-anchor="#hero p"
