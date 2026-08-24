@@ -5,7 +5,7 @@ const projects = [
     title: 'Newline Halo Clone',
     description:
       'An unofficial educational recreation of Newline Halo, built with React, Tailwind CSS, and Supabase as the final project for a frontend development course.',
-    image: '/projects/newlinehalo.jpg',
+    image: '/projects/newlinehalo.webp',
     tags: ['React', 'Tailwind CSS', 'Supabase'],
     liveUrl: 'https://newlinehalo.vercel.app',
     githubUrl: 'https://github.com/jamaltey/newlinehalo',
@@ -14,7 +14,7 @@ const projects = [
     title: 'Trail AZ',
     description:
       'A web application for discovering hiking trails in Azerbaijan, built with React, TypeScript, Tailwind CSS, and Supabase for a national high-school hackathon.',
-    image: '/projects/trailaz.jpg',
+    image: '/projects/trailaz.webp',
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase'],
     liveUrl: 'https://trailaz.netlify.app',
     githubUrl: 'https://github.com/jamaltey/trailaz',
@@ -23,7 +23,7 @@ const projects = [
     title: 'Project X',
     description:
       'A full-stack e-commerce platform for browsing and purchasing consumer electronics, built with Django, Django REST Framework, and Bootstrap. Features include product search and filtering, variants, reviews, wishlists, cart and checkout flows, order tracking, and light/dark themes.',
-    image: '/projects/projectx.jpg',
+    image: '/projects/projectx.webp',
     tags: ['Django', 'Django REST Framework', 'Bootstrap', 'jQuery', 'SQLite'],
     liveUrl: 'https://projectx.jamalteymurov.com',
     githubUrl: 'https://github.com/jamaltey/ProjectX',
@@ -71,9 +71,11 @@ const Projects = () => {
               className="block overflow-hidden"
             >
               <img
+                className="aspect-video w-full object-cover object-top transition duration-500 group-hover:scale-[1.02]"
                 src={project.image}
                 alt={`${project.title} preview`}
-                className="aspect-video w-full object-cover object-top transition duration-500 group-hover:scale-[1.02]"
+                loading="lazy"
+                decoding="async"
               />
             </a>
 

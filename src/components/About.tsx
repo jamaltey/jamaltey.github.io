@@ -23,14 +23,14 @@ const About = () => {
       <div className="flex flex-1 justify-center">
         <div className="relative" data-aos="fade-up" data-aos-delay={100}>
           <img
-            className="h-110 w-72 rounded-xl object-cover object-[43%] opacity-70 blur-lg md:h-100 md:blur-xl"
-            src="jamal.jpg"
+            className="h-110 rounded-xl object-cover object-[43%] opacity-70 blur-lg md:h-100 md:max-w-72 md:blur-xl"
+            src="jamal.webp"
             alt=""
             aria-hidden="true"
           />
           <img
-            className="absolute inset-0 h-110 w-72 rounded-xl object-cover object-[43%] md:h-100"
-            src="jamal.jpg"
+            className="absolute inset-0 h-110 rounded-xl object-cover object-[43%] md:h-100 md:max-w-72"
+            src="jamal.webp"
             alt="Jamal"
           />
         </div>

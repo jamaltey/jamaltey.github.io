@@ -6,7 +6,7 @@ const activities = [
     subtitle: 'IT Summer Camp at Div Academy Kids',
     description:
       'Taught younger students the fundamentals of HTML and CSS and helped them build their first web pages.',
-    image: '/logos/div_kids.jpg',
+    image: '/logos/div-kids.jpg',
     period: '3 weeks in summer 2026',
   },
   {
