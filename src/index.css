@@ -1,12 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400..700&display=swap');
 @import 'tailwindcss';
+
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 @layer base {
   html {
     @apply scrollbar-thin scrollbar-thumb-blue-900 overflow-x-clip scroll-smooth bg-zinc-950;
   }
   body {
-    @apply relative overflow-x-clip bg-[#0a1023] font-[Geist] text-gray-300;
+    @apply relative overflow-x-clip bg-[#0a1023] font-[Geist,sans-serif] text-gray-300;
   }
 
   @media (prefers-reduced-motion: reduce) {
